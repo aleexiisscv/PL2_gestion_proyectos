@@ -1,0 +1,184 @@
+{
+  "diagramType": 2,
+  "data": {
+    "nodes": [
+      {
+        "id": "39def3bc-ba7f-4966-acb6-72a46baf8536",
+        "type": "Table",
+        "position": {
+          "x": 617,
+          "y": 88
+        },
+        "data": {
+          "label": "Mascota",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "208f4e44-6642-4e6f-a62e-5e37f18831cd",
+              "name": "id",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "17b8cc3f-9fac-4bb7-967d-3c4e4db36869",
+              "name": "nombre",
+              "type": "CHAR(n)",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "9b0ad092-46fd-4de8-b5b9-0eb11b0be894",
+              "name": "fecha_nacimiento",
+              "type": "DATE",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "ef6da125-a799-4445-a44c-e737ea45bb6b",
+              "name": "especie",
+              "type": "CHAR(n)",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "7961730c-2e8a-45cb-a442-cef6a2719592",
+              "name": "raza",
+              "type": "CHAR(n)",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "a8caebfb-8799-44a2-95c2-815bca709aca",
+              "name": "fecha_registro",
+              "type": "DATE",
+              "position": 0,
+              "isPrimaryKey": false
+            }
+          ],
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 173
+        },
+        "selected": true,
+        "dragging": false
+      },
+      {
+        "id": "7bbc049f-9f0f-4331-bf29-3ac82e959deb",
+        "type": "Table",
+        "position": {
+          "x": 265,
+          "y": 89
+        },
+        "data": {
+          "label": "Dueño",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "9ec6d4e2-4a3c-4ee5-a363-b59aaabb3730",
+              "name": "dni",
+              "type": "CHAR(n)",
+              "position": 0,
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "2f061dff-87fe-484e-b157-46d1545c2217",
+              "name": "nombre",
+              "type": "CHAR(n)",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "12a09ff4-b65d-42a5-acbd-f2a0731ae0a5",
+              "name": "apellidos",
+              "type": "CHAR(n)",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "2e309149-1d68-4ef3-ba99-800c9a616b47",
+              "name": "dirección",
+              "type": "CHAR(n)",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "b5448d55-9f9b-4790-910f-b750161f228c",
+              "name": "teléfono",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "fk_45712adb-31e7-4aef-9a56-6c8e3fddfc66",
+              "name": "fk_Mascota",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "28f3676c-83e0-45a8-82a7-0ef3425846ca",
+                "sourceTableId": "39def3bc-ba7f-4966-acb6-72a46baf8536",
+                "columns": [
+                  {
+                    "id": "fk_208f4e44-6642-4e6f-a62e-5e37f18831cd",
+                    "name": "id_mascota",
+                    "type": "INT"
+                  }
+                ]
+              }
+            }
+          ],
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 174
+        },
+        "selected": false,
+        "dragging": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "39def3bc-ba7f-4966-acb6-72a46baf8536->7bbc049f-9f0f-4331-bf29-3ac82e959deb_28f3676c-83e0-45a8-82a7-0ef3425846ca",
+        "type": "Relational",
+        "source": "39def3bc-ba7f-4966-acb6-72a46baf8536",
+        "targetHandle": "foreign-key-handle-28f3676c-83e0-45a8-82a7-0ef3425846ca",
+        "target": "7bbc049f-9f0f-4331-bf29-3ac82e959deb",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "28f3676c-83e0-45a8-82a7-0ef3425846ca",
+            "sourceTableId": "39def3bc-ba7f-4966-acb6-72a46baf8536",
+            "columns": [
+              {
+                "id": "fk_208f4e44-6642-4e6f-a62e-5e37f18831cd",
+                "name": "id",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "viewport": {
+      "x": -52,
+      "y": 57.5,
+      "zoom": 1
+    }
+  },
+  "name": "clínica veterinaria-Relational Schema",
+  "folder": {
+    "name": "Diagrams",
+    "folderType": 1,
+    "depth": 0,
+    "id": 246573
+  },
+  "id": 315376,
+  "updatedAtTimestamp": 1772451722
+}
